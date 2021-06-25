@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="css/main.min.css">
+  <title>Barbershop</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="header-nav">
+      <div class="header-nav__logo">
+        <a href="./index.html"
+           class="logo-link">
+          <svg class="logo-svg"
+               aria-label="Barbershop"
+               width='70'
+               height='60'>
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a class="header-nav__link"
+             href="#">О нас</a>
+        </li>
+        <li class="header-nav__item"><a class="header-nav__link"
+             href="#">Услуги и цены</a>
+        </li>
+        <li class="header-nav__item"><a class="header-nav__link"
+             href="#">Мастера</a>
+        </li>
+        <li class="header-nav__item"><a class="header-nav__link"
+             href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-list">
+      <li class="header-list__item">
+        <a href="tel:+380441111111"
+           class="header-list__link">+38 044 111 11 11</a>
+      </li>
+      <li class="header-list__item">
+        <button class="header-list__button"
+                type="button"
+                data-modal-open>онлайн-запись</button>
+      </li>
+    </ul>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="section hero">
+    <div class="hero-container">
+      <p class="hero__text">A hair salon for men in Kyiv</p>
+      <h1 class="hero__title">BarberShop</h1>
+      <p class="hero__subtext">Мы эксперты в модных мужских стрижках.
+        Работаем быстро, осторожно и со вкусом.</p>
+      <p class="hero__slider hero__slider--left">Назад</p>
+      <p class="hero__slider hero__slider--right">Вперед</p>
+      <ul class="hero-links">
+        <li class="hero-links__item"><a href="#"
+             class="hero-links__link"></a>Instagram</li>
+        <li class="hero-links__item"><a href="#"
+             class="hero-links__link"></a>Youtube</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- AFTER-HERO -->
+  <section class="section after-hero">
+    <div class="after-hero-container">
+      <div class="after-hero-row">
+        <div class="after-hero-column__first-col column">
+          <img src="./images/after-hero__img-one.jpg"
+               alt="shaved beard"
+               class="after-hero-column__img"
+               width="270"
+               height="445">
+        </div>
+        <div class="after-hero-column__second-col column">
+          <img src="./images/after-hero__img-two.jpg"
+               alt="shaved neck"
+               class="after-hero-column__img"
+               width="270"
+               height="445">
+        </div>
+        <div class="after-hero-column__third-col column">
+          <p class="after-hero-column__text">о нас</p>
+          <h2 class="after-hero-column__title">Лучший Барбершоп
+            твоего города
+          </h2>
+          <p class="after-hero-column__subtext">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
+            нам.
+          </p>
+          <p class="after-hero-column__description">Мы команда, которая никогда не останавливается на достигнутом
+            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
+            всегда готовы усовершенствовать каждого, кто к нам приходит!
+          </p>
+          <button class="after-hero-column__button"
+                  type="button"
+                  data-modal-open>онлайн-запись</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICE -->
+  <section class="section price">
+    <div class="price-container">
+      <p class="price__text">Проведи время в компании лучших мастеров</p>
+      <h2 class="price__title">Услуги и цены</h2>
+      <div class="price-row">
+        <div class="price-column__first-col price-col">
+          <ul class="price-column-list">
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Мужская стрижка от 300 грн.</p>
+            </li>
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Стрижка бороды от 200 грн.</p>
+            </li>
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Стрижка усов от 200 грн.</p>
+            </li>
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Бритье опасной бритвой от 200 грн.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="price-column__second-col price-col">
+          <ul class="price-column-list">
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Cтрижка у стажера от 50 грн.</p>
+            </li>
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Стрижка под насадку от 200 грн.</p>
+            </li>
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Детская стрижка (до 12 лет) от 300 грн.</p>
+            </li>
+            <li class="price-column-list__item">
+              <p class="price-column-list__text">Камуфлирование седины от 200 грн.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="price__button"
+              type="button"
+              data-modal-open>онлайн-запись</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about">
+    <div class="about-container">
+      <div class="about-row">
+        <div class="about-column__first-col about-col">
+          <div class="about-sub-column__first-sub-col about-sub-col">
+            <div class="about-sub-column__first-block">
+              <p class="about-sub-column__text">
+                600<sup>+</sup>
+              </p>
+              <p class="about-sub-column__text">
+                Довольных клиентов в день
+              </p>
+            </div>
+            <div class="about-sub-column__second-block">
+              <p class="about-sub-column__text">
+                20<sup>+</sup>
+              </p>
+              <p class="about-sub-column__text">
+                Лучших мастеров Киева
+              </p>
+            </div>
+          </div>
+          <div class="about-sub-column__second-sub-col about-sub-col">
+            <div class="about-sub-column__third-block">
+              <p class="about-sub-column__text">
+                50<sup>+</sup>
+              </p>
+              <p class="about-sub-column__text">
+                Наград за отличный сервис
+              </p>
+            </div>
+            <div class="about-sub-column__fourth-block">
+              <p class="about-sub-column__text">
+                100<sup>+</sup>
+              </p>
+              <p class="about-sub-column__text">
+                Подарков постоянным клиентам
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-column__second-col about-col">
+          <p class="about-column__text">старая традиционная школа</p>
+          <h2 class="about-column__title">Почему приходят именно к нам?</h2>
+          <p class="about-column__subtext">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10
+            раз прочитать.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MASTERS -->
+  <section class="section masters">
+    <div class="masters-container">
+      <p class="masters__text">для настоящих ценителей атмосферы</p>
+      <h2 class="masters__title">Наши мастера</h2>
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+
+  <div class="modal is-hidden"
+       data-modal>
+    <div class="modal__body">
+      <div class="modal__content">
+        <button class="modal__close-button"
+                data-modal-close>
+          <svg class="modal__close-img"
+               width="20"
+               height="20">
+            <use href="images/icons.svg#icon-modal-close">
+            </use>
+          </svg>
+        </button>
+        <div class="modal-container">
+          <form class=" modal__form">
+            <h3 class="modal__title">Let us help you!</h3>
+            <label class="modal__label">
+              Telephone
+              <input class="modal__field"
+                     type="tel"
+                     name="telephone"
+                     pattern="[0-9]{11}"
+                     required>
+              <svg class="modal__field-img"
+                   width="18"
+                   height="18">
+                <use href="images/icons.svg#icon-tel">
+                </use>
+              </svg>
+            </label>
+            <label class="modal__label">
+              Username
+              <input class="modal__field"
+                     type="text"
+                     name="username"
+                     required>
+              <svg class="modal__field-img"
+                   width="18"
+                   height="18">
+                <use href="images/icons.svg#icon-user">
+                </use>
+              </svg>
+            </label>
+            <div class="modal__btn">
+              <button class="modal__button"
+                      type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

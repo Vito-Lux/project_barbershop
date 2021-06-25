@@ -1,0 +1,79 @@
+.modal__form {
+  @include flexType(f, null, null, c);
+  background: $line-grad, url("../../images/modal_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.modal__title {
+  @include flexType(c, c, c);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  @include fontLineWeightLetter(32, 48, eb, base);
+  color: clr(dark-blue);
+  margin-bottom: 20px;
+}
+
+.modal__label {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  margin-bottom: 6px;
+  @include fontLineWeightLetter(12, 14, eb, base);
+  color: clr(dark-blue);
+}
+
+.modal__field {
+  @include flexType(f, null, null, c);
+  min-width: 448px;
+  min-height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include transitionRules();
+
+  &:hover,
+  &:focus {
+    background-color: clr(peach);
+    color: clr(dark-blue);
+    cursor: pointer;
+    @include borderSolid(1, clr(dark-blue));
+  }
+}
+
+.modal__field:hover + .modal__field-img,
+.modal__field:focus + .modal__field-img {
+  @include transitionRules(fill);
+  fill: clr(dark-blue);
+}
+
+.modal__field-img {
+  position: absolute;
+  top: 39px;
+  left: 50px;
+}
+
+.modal__button {
+  @include flexType(f, c, c);
+  @extend .header__button;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  background-color: clr(sky);
+  @include borderSolid(4, clr(sky));
+  color: clr(whity);
+  @include transitionRules();
+
+  &:hover,
+  &:focus {
+    background-color: clr(peach);
+    color: clr(blue);
+    @include borderSolid(4, clr(dark-blue));
+  }
+}
